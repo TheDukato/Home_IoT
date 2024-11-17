@@ -82,7 +82,7 @@ if [[ $1 == "parse" ]]; then
 		       echo MAC: $MAC POWER: $CALC kW TOTAL: $CALCIM kWh | awk '{ print strftime("%Y-%m-%d %H:%M:%S"), $0; fflush(); }'
 		       if [ "$MAC" = "D0F01843D74F" ]; then
 			       echo Mamy dopasowanie !!!
-			       echo MAC: $MAC POWER: $CALC kW TOTAL: $CALCIM kWh | awk '{ print strftime("%Y-%m-%d %H:%M:%S"), $0; fflush(); }' >> meter_data.txt
+			       echo MAC: $MAC POWER: $CALC kW TOTAL: $CALCIM kWh | awk '{ print strftime("%Y-%m-%d %H:%M:%S"), $0; fflush(); }' >> sensor_L3.txt
 			       exit 1
 		       fi
 		       #actual_data=$(date +"%Y-%m-%d_%H:%M:%S")

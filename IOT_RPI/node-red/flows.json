@@ -8,130 +8,6 @@
         "env": []
     },
     {
-        "id": "90c796402420f09a",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "72e925fde66eb07d",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "cd51e4d26f307c8b",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey",
-                "palette": "light"
-            }
-        },
-        "site": {
-            "name": "Node-RED Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "c1d4b6c32cfc9639",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "72e925fde66eb07d",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "103d0cc6e341f241",
         "type": "rpi-gpio in",
         "z": "022bda1f66daf757",
@@ -148,22 +24,6 @@
                 "141bb5f872f819d6"
             ]
         ]
-    },
-    {
-        "id": "9ca9c916ea4c471d",
-        "type": "debug",
-        "z": "022bda1f66daf757",
-        "name": "debug 12",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 740,
-        "wires": []
     },
     {
         "id": "141bb5f872f819d6",
@@ -202,32 +62,6 @@
         "wires": []
     },
     {
-        "id": "d7419ba1ab0e0153",
-        "type": "exec",
-        "z": "022bda1f66daf757",
-        "command": "res=$(( $(cat /home/kamil/IOT/node-red/counter_2.txt) + $(grep -o \"1\" /home/kamil/IOT/node-red/sensor_2.txt|wc -l) )); echo $res >/home/kamil/IOT/node-red/counter_2.txt;echo 0 > /home/kamil/IOT/node-red/sensor_2.txt;",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 800,
-        "y": 740,
-        "wires": [
-            [
-                "9ca9c916ea4c471d"
-            ],
-            [
-                "9ca9c916ea4c471d"
-            ],
-            [
-                "9ca9c916ea4c471d"
-            ]
-        ]
-    },
-    {
         "id": "a47d6ce02a0ff990",
         "type": "comment",
         "z": "022bda1f66daf757",
@@ -254,22 +88,6 @@
                 "b53c1732c8bb2dd8"
             ]
         ]
-    },
-    {
-        "id": "c6a5a0e4700ee601",
-        "type": "debug",
-        "z": "022bda1f66daf757",
-        "name": "debug 14",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1580,
-        "y": 680,
-        "wires": []
     },
     {
         "id": "b53c1732c8bb2dd8",
@@ -308,32 +126,6 @@
         "wires": []
     },
     {
-        "id": "8e1759f51f86430c",
-        "type": "exec",
-        "z": "022bda1f66daf757",
-        "command": "res=$(( $(cat /home/kamil/IOT/node-red/counter_1.txt) + $(grep -o \"1\" /home/kamil/IOT/node-red/sensor_1.txt|wc -l))); echo $res >/home/kamil/IOT/node-red/counter_1.txt;echo 0 > /home/kamil/IOT/node-red/sensor_1.txt;",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 790,
-        "y": 680,
-        "wires": [
-            [
-                "c6a5a0e4700ee601"
-            ],
-            [
-                "c6a5a0e4700ee601"
-            ],
-            [
-                "c6a5a0e4700ee601"
-            ]
-        ]
-    },
-    {
         "id": "cc10a0083ff946f3",
         "type": "comment",
         "z": "022bda1f66daf757",
@@ -347,7 +139,7 @@
         "id": "79442bd308e76033",
         "type": "exec",
         "z": "022bda1f66daf757",
-        "command": "python /home/kamil/IOT_RPI/proces_raw_data.py",
+        "command": "python /home/kamil/IOT_RPI/proces_raw_data_digital_RPI_energy_meter.py",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -355,7 +147,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 450,
+        "x": 690,
         "y": 360,
         "wires": [
             [
@@ -381,18 +173,19 @@
                 "vt": "str"
             }
         ],
-        "repeat": "10",
+        "repeat": "120",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 110,
         "y": 360,
         "wires": [
             [
-                "79442bd308e76033"
+                "952e1c7c8910dbb5",
+                "48f8dd542953a66d"
             ]
         ]
     },
@@ -408,14 +201,119 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 800,
+        "x": 1040,
         "y": 360,
         "wires": []
     },
     {
-        "id": "240df6e307a5b4f3",
+        "id": "13faca5ab9b403a9",
+        "type": "exec",
+        "z": "022bda1f66daf757",
+        "command": "python /home/kamil/IOT_RPI/proces_raw_data_iNode.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 690,
+        "y": 460,
+        "wires": [
+            [
+                "a02f83a3877329ed"
+            ],
+            [
+                "a02f83a3877329ed"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a02f83a3877329ed",
+        "type": "debug",
+        "z": "022bda1f66daf757",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "952e1c7c8910dbb5",
+        "type": "delay",
+        "z": "022bda1f66daf757",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "13faca5ab9b403a9"
+            ]
+        ]
+    },
+    {
+        "id": "c05cebd2336203c4",
+        "type": "exec",
+        "z": "022bda1f66daf757",
+        "command": "cd /home/kamil/IOT_RPI/iNode/; sudo ./script.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 660,
+        "y": 560,
+        "wires": [
+            [
+                "e7c44cea165e518d"
+            ],
+            [
+                "e7c44cea165e518d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e7c44cea165e518d",
+        "type": "debug",
+        "z": "022bda1f66daf757",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "cecdb3b3de0d8434",
         "type": "inject",
-        "z": "90c796402420f09a",
+        "z": "022bda1f66daf757",
         "name": "",
         "props": [
             {
@@ -426,7 +324,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "10",
+        "repeat": "60",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -434,340 +332,46 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 240,
+        "y": 560,
         "wires": [
             [
-                "5486a1805e68ad8d",
-                "27598d5b8e2f5de0",
-                "26efd77474da3aa9",
-                "db38d7c07d104ecb"
+                "c05cebd2336203c4"
             ]
         ]
     },
     {
-        "id": "291e050b777cd4ac",
+        "id": "48f8dd542953a66d",
+        "type": "delay",
+        "z": "022bda1f66daf757",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "79442bd308e76033"
+            ]
+        ]
+    },
+    {
+        "id": "5b2bd27eb745167d",
         "type": "comment",
-        "z": "90c796402420f09a",
-        "name": "Dashboard",
+        "z": "022bda1f66daf757",
+        "name": "Proces raw data",
         "info": "",
         "x": 140,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "5486a1805e68ad8d",
-        "type": "file in",
-        "z": "90c796402420f09a",
-        "name": "",
-        "filename": "/home/kamil/IOT_RPI/node-red/counter_2.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 200,
-        "wires": [
-            [
-                "0fd587e99fd8c260"
-            ]
-        ]
-    },
-    {
-        "id": "9074e1e46c52d8a2",
-        "type": "debug",
-        "z": "90c796402420f09a",
-        "name": "debug 16",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "8650d48544a464e5",
-        "type": "ui_text",
-        "z": "90c796402420f09a",
-        "group": "c1d4b6c32cfc9639",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "L1",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1030,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "0fd587e99fd8c260",
-        "type": "function",
-        "z": "90c796402420f09a",
-        "name": "function 2",
-        "func": "msg.payload = parseFloat(msg.payload).toFixed(2);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 820,
-        "y": 200,
-        "wires": [
-            [
-                "9074e1e46c52d8a2",
-                "e62a3d916319319f"
-            ]
-        ]
-    },
-    {
-        "id": "27598d5b8e2f5de0",
-        "type": "file in",
-        "z": "90c796402420f09a",
-        "name": "",
-        "filename": "/home/kamil/IOT_RPI/node-red/counter_1.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 120,
-        "wires": [
-            [
-                "de09577274b3dc21"
-            ]
-        ]
-    },
-    {
-        "id": "2e4ca4bd4359f450",
-        "type": "debug",
-        "z": "90c796402420f09a",
-        "name": "debug 17",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "e62a3d916319319f",
-        "type": "ui_text",
-        "z": "90c796402420f09a",
-        "group": "c1d4b6c32cfc9639",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "L2",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1030,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "de09577274b3dc21",
-        "type": "function",
-        "z": "90c796402420f09a",
-        "name": "function 3",
-        "func": "msg.payload = parseFloat(msg.payload).toFixed(2);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 820,
-        "y": 120,
-        "wires": [
-            [
-                "2e4ca4bd4359f450",
-                "8650d48544a464e5"
-            ]
-        ]
-    },
-    {
-        "id": "26efd77474da3aa9",
-        "type": "file in",
-        "z": "90c796402420f09a",
-        "name": "",
-        "filename": "/home/kamil/IOT_RPI/iNode/backup_important.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 450,
-        "y": 280,
-        "wires": [
-            [
-                "89cea474ace828ea"
-            ]
-        ]
-    },
-    {
-        "id": "4e031b202a06c3b7",
-        "type": "debug",
-        "z": "90c796402420f09a",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "89cea474ace828ea",
-        "type": "function",
-        "z": "90c796402420f09a",
-        "name": "function 4",
-        "func": "// Funkcja do wyciągania najnowszego wystąpienia wybranego adresu MAC oraz jego powiązanej wartości TOTAL\nfunction extractLatestMacAddressWithTotal(input, selectedMac) {\n    // Wyrażenie regularne do wykrywania adresów MAC oraz wartości TOTAL\n    const regex = /\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2},\\sMAC:\\s([0-9A-Fa-f]{12}),\\sTotal:\\s([\\d.]+)/g;\n\n    let match;\n    let latestMac = null;\n    let latestTotal = null;\n\n    // Szukamy wszystkich dopasowań\n    while ((match = regex.exec(input)) !== null) {\n        const mac = match[1];       // Adres MAC\n        const total = match[2];     // Wartość TOTAL (kWh)\n\n        // Sprawdzamy, czy adres MAC jest tym, którego szukamy\n        if (mac === selectedMac) {\n            latestMac = mac;\n            latestTotal = total;  // Zapisujemy najnowsze wystąpienie\n        }\n    }\n\n    // Jeśli znaleziono, zwróć wynik w formacie obiektu, w przeciwnym razie null\n    if (latestMac !== null) {\n        return { mac: latestMac, total: latestTotal };\n    } else {\n        return null;  // Jeśli nie znaleziono adresu MAC\n    }\n}\n\n// Wybrany adres MAC, którego szukasz\nconst selectedMac = \"D0F01843D74F\";\n\n// Wyciąganie najnowszego wystąpienia wybranego adresu MAC z powiązaną wartością TOTAL\nconst latestMacWithTotal = extractLatestMacAddressWithTotal(msg.payload, selectedMac);\n\n// Wyświetlanie wyników\nif (latestMacWithTotal) {\n    console.log(`Najnowsze wystąpienie adresu MAC ${latestMacWithTotal.mac}: TOTAL = ${latestMacWithTotal.total} kWh`);\n} else {\n    console.log(`Nie znaleziono adresu MAC ${selectedMac}`);\n}\n\nmsg.payload = latestMacWithTotal.total;\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 280,
-        "wires": [
-            [
-                "4e031b202a06c3b7",
-                "4cdc25d5a45dab55"
-            ]
-        ]
-    },
-    {
-        "id": "4cdc25d5a45dab55",
-        "type": "ui_text",
-        "z": "90c796402420f09a",
-        "group": "c1d4b6c32cfc9639",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "L3",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1030,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "db38d7c07d104ecb",
-        "type": "file in",
-        "z": "90c796402420f09a",
-        "name": "",
-        "filename": "/home/kamil/IOT_RPI/iNode/backup_important.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 450,
-        "y": 380,
-        "wires": [
-            [
-                "376133d75c85ea3f"
-            ]
-        ]
-    },
-    {
-        "id": "b8a790d2e4c2c4c3",
-        "type": "debug",
-        "z": "90c796402420f09a",
-        "name": "debug 20",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "376133d75c85ea3f",
-        "type": "function",
-        "z": "90c796402420f09a",
-        "name": "function 5",
-        "func": "// Funkcja do wyciągania najnowszego wystąpienia wybranego adresu MAC oraz jego powiązanej wartości TOTAL\nfunction extractLatestMacAddressWithTotal(input, selectedMac) {\n    // Wyrażenie regularne do wykrywania adresów MAC oraz wartości TOTAL\n    const regex = /\\d{4}-\\d{2}-\\d{2}\\s\\d{2}:\\d{2}:\\d{2},\\sMAC:\\s([0-9A-Fa-f]{12}),\\sTotal:\\s([\\d.]+)/g;\n\n    let match;\n    let latestMac = null;\n    let latestTotal = null;\n\n    // Szukamy wszystkich dopasowań\n    while ((match = regex.exec(input)) !== null) {\n        const mac = match[1];       // Adres MAC\n        const total = match[2];     // Wartość TOTAL (kWh)\n\n        // Sprawdzamy, czy adres MAC jest tym, którego szukamy\n        if (mac === selectedMac) {\n            latestMac = mac;\n            latestTotal = total;  // Zapisujemy najnowsze wystąpienie\n        }\n    }\n\n    // Jeśli znaleziono, zwróć wynik w formacie obiektu, w przeciwnym razie null\n    if (latestMac !== null) {\n        return { mac: latestMac, total: latestTotal };\n    } else {\n        return null;  // Jeśli nie znaleziono adresu MAC\n    }\n}\n\n// Wybrany adres MAC, którego szukasz\nconst selectedMac = \"D0F018441A70\";\n\n// Wyciąganie najnowszego wystąpienia wybranego adresu MAC z powiązaną wartością TOTAL\nconst latestMacWithTotal = extractLatestMacAddressWithTotal(msg.payload, selectedMac);\n\n// Wyświetlanie wyników\nif (latestMacWithTotal) {\n    console.log(`Najnowsze wystąpienie adresu MAC ${latestMacWithTotal.mac}: TOTAL = ${latestMacWithTotal.total} kWh`);\n} else {\n    console.log(`Nie znaleziono adresu MAC ${selectedMac}`);\n}\n\nmsg.payload = latestMacWithTotal.total;\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 840,
-        "y": 380,
-        "wires": [
-            [
-                "b8a790d2e4c2c4c3",
-                "8790261b41ce7ca8"
-            ]
-        ]
-    },
-    {
-        "id": "8790261b41ce7ca8",
-        "type": "ui_text",
-        "z": "90c796402420f09a",
-        "group": "c1d4b6c32cfc9639",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Gaz główny",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1050,
-        "y": 420,
+        "y": 300,
         "wires": []
     }
 ]
