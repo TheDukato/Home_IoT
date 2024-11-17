@@ -51,7 +51,7 @@ def send_data_to_sheets(sheet_id, data, client):
 def main():
     # Wskazanie pliku z danymi i pliku z danymi uwierzytelniającymi
     backup_file = 'backup_important.txt'
-    credentials_file = '/home/kamil/Desktop/iNode/massive-capsule-441311-v7-bdf3228a5a0c.json'  # Podaj ścieżkę do pliku JSON z danymi uwierzytelniającymi
+    credentials_file = '/home/kamil/REPO/Home_IoT/IOT_RPI/massive-capsule-441311-v7-bdf3228a5a0c.json'  # Podaj ścieżkę do pliku JSON z danymi uwierzytelniającymi
     
     # ID arkusza Google Sheets (znajdziesz je w URL arkusza)
     sheet_id = '12bqE9exr-ko6KE-W2obp4_3IjaJ7WixCrH-Wu0D-O2I'  # Podaj identyfikator arkusza Google Sheets
