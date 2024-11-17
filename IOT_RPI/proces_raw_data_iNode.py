@@ -8,36 +8,31 @@ def process_meter_data(sensor_file, counter_file):
 
     # Odczyt danych z pliku
     with open(sensor_file, 'r') as f:
-        lines = f.readlines()
-    print(f"KP1 {lines}")    
+        lines = f.readlines()  
     # Analiza danych
     entries = []
     for line in lines:
-        print(f"KP2 {line}")
         match = pattern.search(line)
         if match:
-            print(f"KP2 {line}")
             date_str = match.group(1)
             mac_address = match.group(2)
             total = float(match.group(3))
             entries.append((date_str, mac_address, total))
-    print(f"KP {entries}")
-    
+    with open(sensor_file, 'w') as f:
+        f.write("")
+
     # Jeśli dane są dostępne, wybierz najnowszy wpis
     if entries:
         # Zamień stringi dat na obiekty datetime, aby porównać
         entries.sort(key=lambda x: datetime.strptime(x[0], '%Y-%m-%d %H:%M:%S'), reverse=True)
-        print(f"entries{entries}")
-        for entry in entries:
-                print(f"Najnowszy wpis: Data: {entry[0]}, MAC: {entry[1]}, Total: {entry[2]}")
-                with open(counter_file, 'w') as f:
-                    f.write(f"{entry[2]}")
-
-
+        print(f"Najnowszy wpis: Data: {entries[0][0]}, MAC: {entries[0][1]}, Total: {entries[0][2]}")
+        with open(counter_file, 'w') as f:
+            f.write(f"{entries[0][2]}")
     else:
         print("Brak danych do przetworzenia.")
 
 # Uruchomienie programu
 
 for counter in counters:
-    process_meter_data(counter["sensor_file"], counter["counter_file"])
+    if counter["sensor_type"] == "iNode":
+        process_meter_data(counter["sensor_file"], counter["counter_file"])
